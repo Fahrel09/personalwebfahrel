@@ -1,0 +1,236 @@
+body {  
+  scroll-behavior: smooth;
+    font-family: Arial, Helvetica, sans-serif;
+    color: #8D72E1;
+    text-shadow: 1px 0.5px rgb(0, 0, 0);
+    font-size: 17px;
+    padding: 15px;
+    display: block;
+}
+
+ .container {
+   background-image: url(https://i.pinimg.com/originals/cc/e9/04/cce9043fb0b58b3ee3f2a13f95378c3f.gif);
+    width: auto ;
+    height: 300px;
+    border-style: groove; 
+    border-color: #000000;
+    margin-top: -23px;
+    margin-left: -25;
+    margin-right: -25;
+
+  }   
+
+  h1 { 
+    text-align: center; 
+    position: sticky;
+    left: 0;
+    top: 0;
+  }
+  
+  .link-nav {
+    
+    text-align: right;
+    text-decoration: none;
+    text-shadow: none;
+    margin-top: -20px;
+
+  
+  }
+  .buatnav {
+    position: sticky;
+    top: 0;
+    left: 0;
+    z-index: 1;
+  }
+
+  .nav-links ul li {
+    flex: 1;
+    list-style: none;
+    display: inline-block;
+    padding: 5px 12px;
+    position: relative;
+  }
+
+  .nav-links ul li a{
+    color: rgb(0, 255, 242);
+    text-decoration: none;
+    font-size: 18px;
+  }
+
+  .nav-links ul li ::after {
+    content: '';
+    width: 0%;
+    height: 2px;
+    background: #ff00ee;
+    display: block;
+    margin: auto;
+    transition: 0.5s;
+  }
+
+  .nav-links ul li :hover::after {
+    width: 100%;
+  }
+
+  .content{ 
+    border-radius: 10px;
+  }
+
+  .content-header{ margin-bottom: 0; }
+  
+  .content-text {
+     font-size: 50px;
+     margin-top: -150px;
+     text-align: left;
+     margin-left: 75px;
+     text-shadow: none;
+  }
+  
+  #content-img {
+    min-height: 100px;
+    text-align: center;
+  }
+
+  #content-img img {
+    width: 200px; height: 200px;
+    text-align: center;
+    float: left;
+    border-radius: 50%;
+    border-style: solid;
+    border-color: black;
+    margin-right: 75px;
+  }
+
+  .responsive-table{
+    color: #000000;
+    font-size: 15px;
+    text-align: justify;
+    text-shadow: none;
+  }
+
+  .section{
+    margin-top: 50px;
+  }
+
+  .section-header{
+    width: 80%;
+    margin: auto;
+    text-align: center;
+    padding-top: 100px;
+  }
+
+  .section-small {
+    max-width: 490px;
+    margin-left: auto;
+    margin-right: auto;
+    padding-top: 50px;
+    text-align: center;
+  }
+  
+  .text-left { text-align: center; }
+  
+
+  .nurcipa {
+    margin-top: 100px;
+    text-align: center;
+    
+  }
+
+  .nurcipa img{
+    width: 300px;
+    height: 300px;
+    border-style: solid;
+    box-shadow: 5px 5px 5px #000000;
+    margin-bottom: 10%;
+  }
+
+  .card {
+  flex-basis: 31%;
+  color: #000000;
+  border: black; border-style: solid;
+  background-color: rgb(196, 190, 182);
+  text-shadow: none;
+  transition: 0.5s;
+  transition-delay: 0.3s;
+  padding: 32px;
+  margin: 81px 25px;
+  text-align: center;
+  margin-top: 100px;
+  margin-bottom: 100px;
+  border-radius: 10px;
+  }
+
+  .card img{
+    width: 150px; height: 150px;
+  }
+
+  .card:hover {
+  background-color: #77e4ba;
+  }
+
+  .all-card{
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .skill {
+    text-align: center;
+    padding-top: 15px;
+  }
+
+
+  @media screen and (max-width: 360px) {
+      body{
+        padding: 0 10px;
+        color:dodgerblue;
+      }
+
+      .nav-links{
+      display: block;
+      text-align: center;
+      margin-left: 10px;
+      margin-right: 35px;
+      }
+
+    .content-text{
+      margin-left: 50px;
+      margin-bottom: 5px;
+      
+    }
+    .gambar{
+      margin-left: 50px;
+    }
+     
+    .container{
+      background-image: url(https://i.pinimg.com/originals/4c/ae/11/4cae11cd1870c63b6cd3c3b382767088.gif);
+      background-size: contain; 
+      width: auto;
+      height: 250px;
+      border-style: groove; 
+      border-color: #000000;
+      margin-top: -23px;
+      margin-left: -25;
+      margin-right: -25;  
+    }
+
+    .card{
+      color: #000000;
+      border: black; border-style: solid;
+      background-color: rgb(196, 190, 182);
+      text-shadow: none;
+      transition: 0.5s;
+      transition-delay: 0.3s;
+      padding: 10px 10px;
+      margin: 30px 10px;
+      text-align: center;
+    }
+
+    .all-card{
+      flex-basis: 31%;
+       flex-direction: column;
+    }
+
+    .card img{
+      width: 100px;
+      height: 100px;
+    }
+  }
